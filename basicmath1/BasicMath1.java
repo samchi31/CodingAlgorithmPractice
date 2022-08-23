@@ -1,4 +1,4 @@
-package codepractice.basicmath;
+package codepractice.basicmath1;
 //손익분기점
 import java.io.BufferedReader;
 import java.io.IOException;
