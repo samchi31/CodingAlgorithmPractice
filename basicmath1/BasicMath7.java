@@ -1,6 +1,7 @@
 package codepractice.basicmath1;
 
 //설탕 배달
+// 반복없이 풀어보기
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -19,10 +19,10 @@ public class BasicMath1 {
 			if (Integer.parseInt(arr[i]) == 1) {
 				continue;
 			}
-			if (Integer.parseInt(arr[i]) == 2) {
-				count++;
-				continue;
-			}
+//			if (Integer.parseInt(arr[i]) == 2) {
+//				count++;
+//				continue;
+//			}
 			for (int j = 2; j < Integer.parseInt(arr[i]); j++) {
 				if (Integer.parseInt(arr[i]) % j == 0) {
 					isPrime = false;

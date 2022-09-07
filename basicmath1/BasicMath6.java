@@ -1,6 +1,8 @@
 package codepractice.basicmath1;
 
 //부녀회장이 될꺼야
+// 다시풀어보기 전체탐색?
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -1,5 +1,6 @@
 package codepractice.basicmath1;
 // 벌집
+// 다시풀어보기
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,14 +10,14 @@ public class BasicMath2 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int num = Integer.parseInt(br.readLine());
-//		int i = 0;
-//		while(true) {
-//			if(Method(i) >= num) {
-//				break;
-//			}
-//			i++;
-//		}		
-//		System.out.println(i+1);
+		int i = 0;
+		while(true) {
+			if(Method(i) >= num) {
+				break;
+			}
+			i++;
+		}		
+		System.out.println(i+1);
 		
 		/*
 		 * 처음 짠 코드
