@@ -30,31 +30,26 @@ public class P2108 {
 			cnt[item+4000]++;
 		}
 		for(int i = 0 ; i<cnt.length;i++) {
-			if(cnt[max]<cnt[i])
+			if(cnt[max]<cnt[i]) {
 				max= i;
-			if(!isSecond && cnt[max]==cnt[i]) {
+			}
+			else if(!isSecond && cnt[max]==cnt[i] && cnt[i] != 0) {
 				isSecond=true;
 				max=i;
 			}
 		}
-		maxValue = cnt[max]+"\n";
+		maxValue = max-4000+"\n";
 		// 2
 		for(int i=1;i<cnt.length;i++) {
 			cnt[i] += cnt[i-1];
 		}
 		// 3
 		for(int i=0;i<arr.length;i++) {
-			/*
-			 * i 번째 원소를 인덱스로 하는 counting 배열을 1 감소시킨 뒤
-			 * counting 배열의 값을 인덱스로 하여 result에 value 값을 저장한다
-			 */
 			int value = arr[i];
 			cnt[value+4000]--;
 			result[cnt[value+4000]] = value;
 		}
-		for (int i : result) {
-			System.out.print(i+",");
-		}
+		
 		sb.append(result[(t+1)/2-1] + "\n");
 		sb.append(maxValue);
 		sb.append(result[t-1]-result[0]+"\n");
